@@ -111,9 +111,3 @@ I know about these issues and would fix them in the next iteration:
 - Client-side and server-side validation, and why both are needed
 - Working in a team: splitting modules, integrating code and handling a tight deadline
 - Security basics: SQL injection, password storage and access control
-
-## Team
-
-- [Your name] – Room Maintenance, Extras
-- [Teammate name] – [module]
-- [Teammate name] – [module]
