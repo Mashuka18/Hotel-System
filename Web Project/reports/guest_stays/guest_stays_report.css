@@ -1,0 +1,111 @@
+/*<!-- Name: Mariia Vanaga --> 
+<!-- Student ID: C00313153 --> 
+<!-- Date: February 2026 --> 
+<!-- Screen name: guest_stays_report.css --> 
+<!-- Purpose: style the guest stays report with a clean card layout, formatted table, and interactive buttons for better readability and user experience. --> */
+/* Main container that holds the report content */
+.report-card{
+    background:#f2f2f2; /* light grey background for the report card */
+    max-width:950px; /* limits the width so the card does not stretch too wide */
+    margin:40px auto; /* adds space above/below and centers the card horizontally */
+    padding:35px 40px; /* inner spacing inside the card (top/bottom, left/right) */
+    border-radius:15px; /* rounded corners for a modern card look */
+    box-shadow:0 8px 25px rgba(0,0,0,0.25); /* soft shadow to lift the card from the background */
+}
+
+
+/* TITLES */
+
+/* Main heading inside the report card */
+.report-card h1{
+    margin-top:0; /* removes default space above the heading */
+    font-size:28px; /* makes the heading larger */
+    color:black; /* sets heading text color */
+}
+
+/* Description text under the heading */
+.report-card p{
+    color:#494D52; /* dark grey text for softer look */
+    margin-bottom:20px; /* space below the paragraph */
+}
+
+
+/* BUTTONS */
+
+/* Container that holds the sorting buttons */
+.report-buttons{
+    margin-bottom:20px; /* space between buttons and the table */
+}
+
+/* Styling for all buttons inside report-buttons */
+.report-buttons input{
+    padding:10px 18px; /* space inside button (top/bottom, left/right) */
+    margin-right:10px; /* space between buttons */
+    border:none; /* removes default browser border */
+    border-radius:6px; /* rounded button corners */
+    background:#d62a2a; /* red background color */
+    color:white; /* white button text */
+    font-size:14px; /* text size inside buttons */
+    cursor:pointer; /* changes mouse cursor to pointer on hover */
+    transition:0.25s; /* smooth transition effect when hovering */
+}
+
+/* Hover effect when user moves mouse over buttons */
+.report-buttons input:hover{
+    background:#b00000; /* darker red when hovered */
+}
+
+/* Style applied when a button is disabled */
+.report-buttons input:disabled{
+    background:#999; /* grey background to show it is inactive */
+    cursor:not-allowed; /* blocked cursor indicating it cannot be clicked */
+}
+
+
+/*TABLE*/
+
+/* Main table styling */
+table{
+    width:100%; /* table fills the width of the report card */
+    border-collapse:collapse; /* removes gaps between table borders */
+    background:white; /* white table background */
+    border-radius:8px; /* rounded table edges */
+    overflow:hidden; /* keeps rounded corners visible */
+}
+
+
+/*TABLE HEADER */
+
+/* Styling for table header cells */
+th{
+    background:#d62a2a; /* red header background */
+    color:white; /* white header text */
+    padding:12px; /* space inside header cells */
+    text-align:left; /* aligns text to the left */
+}
+
+
+/*TABLE CELLS */
+
+/* Styling for normal table cells */
+td{
+    padding:10px; /* space inside table cells */
+    border-bottom:1px solid #ddd; /* light grey line between rows */
+    color:#333; /* dark grey text color */
+}
+
+
+/*ZEBRA ROWS*/
+
+/* Applies background color to every even row */
+tr:nth-child(even){
+    background:#f7f7f7; /* light grey alternating rows for readability */
+}
+
+
+/*ROW HOVER EFFECT */
+
+/* Changes row color when user hovers over it */
+tr:hover{
+    background:#ececec; /* slightly darker grey highlight */
+}

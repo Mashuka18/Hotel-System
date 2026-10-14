@@ -1,0 +1,109 @@
+/* Name: Mariia Vanaga 
+   Student ID: C00313153 
+   Month: March 2026
+   Screen name: add_amend_delete.css
+   Purpose: General Form Styles for add, amend, delete forms.*/
+
+/* General Form Styles */
+/* Centering the form and giving a card-like style */
+form {
+    background: rgba(255, 255, 255, 0.95); /* White background with slight transparency */
+    padding: 40px 30px; /* Space inside the form: 40px top/bottom, 30px left/right */
+    border-radius: 12px; /* Rounded corners for a softer look */
+    max-width: 500px; /* Form will not exceed 500px in width */
+    margin: 50px auto; /* 50px space from top, auto horizontally centers the form */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow for 3D/card effect */
+    color: #3f3a34; /* Default text color inside form */
+}
+
+/* Form Headings */
+form h1 {
+    font-size: 28px; /* Large heading font */
+    margin-bottom: 10px; /* Space below the heading */
+    color: #3f3a34; /* Dark text color for heading */
+    font-weight: 700; /* Bold font */
+}
+
+form h4 {
+    font-size: 16px; /* Smaller subheading font */
+    font-weight: 500; /* Medium-bold text */
+    margin-bottom: 30px; /* Space below subheading */
+    color: #555; /* Greyish color for subheading */
+}
+
+/* Each input container */
+.inputbox {
+    margin-bottom: 20px; /* Space between input sections */
+    display: flex; /* Use flexbox for aligning label + input vertically */
+    flex-direction: column; /* Stack label and input on top of each other */
+}
+
+/* Labels styling */
+.inputbox label {
+    font-weight: 600; /* Slightly bold for readability */
+    margin-bottom: 6px; /* Space between label and input */
+    font-size: 14px; /* Label font size */
+}
+
+/* Inputs and textareas */
+.inputbox input[type="text"], /* Regular text inputs */
+.inputbox input[type="number"], /* Number inputs */
+.inputbox input[readonly], /* Read-only inputs */
+.inputbox input:disabled, /* Disabled inputs */
+.inputbox select, /* Dropdown selects */
+.inputbox textarea { /* Textareas */
+    padding: 10px 14px; /* Inner padding: top/bottom 10px, left/right 14px */
+    border-radius: 8px; /* Rounded corners for inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    font-size: 14px; /* Input text size */
+    outline: none; /* Remove default browser outline on focus */
+    width: 100%; /* Input takes full width of container */
+    transition: all 0.2s ease-in-out; /* Smooth transition for hover/focus effects */
+    font-family: Inter, system-ui, sans-serif; /* Consistent font for all inputs */
+}
+
+/* Inputs on focus */
+.inputbox input:focus,
+.inputbox select:focus,
+.inputbox textarea:focus {
+    border-color: #d62a2a; /* Highlight border in red when input is focused */
+    box-shadow: 0 0 5px rgba(214, 42, 42, 0.3); /* Subtle red glow around input */
+}
+
+/* Textareas */
+.inputbox textarea {
+    resize: vertical; /* Allow user to resize textarea only vertically */
+    min-height: 80px; /* Minimum height to make textarea visible enough */
+}
+
+/* Buttons container */
+.myButton, .buttons {
+    display: flex; /* Use flexbox to arrange buttons */
+    gap: 15px; /* Space between buttons */
+    justify-content: flex-start; /* Align buttons to left */
+    margin-top: 25px; /* Space above buttons */
+}
+
+/* Submit / action buttons */
+.myButton input[type="submit"],
+.myButton input[type="button"],
+.buttons button {
+    background: #d62a2a; /* Red background for buttons */
+    color: #fff; /* White text on buttons */
+    padding: 12px 20px; /* Padding inside buttons */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners for buttons */
+    font-weight: 600; /* Semi-bold text */
+    cursor: pointer; /* Cursor becomes pointer on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    font-family: Inter, system-ui, sans-serif; /* Consistent font */
+}
+
+/* Button hover effect */
+.myButton input[type="submit"]:hover,
+.myButton input[type="button"]:hover,
+.buttons button:hover {
+    background: #b00000; /* Darker red when hovered */
+    transform: translateY(-3px); /* Slight upward movement */
+    box-shadow: 2px 2px 6px rgba(199, 45, 68, 0.6); /* Shadow effect on hover */
+}

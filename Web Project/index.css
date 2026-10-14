@@ -1,0 +1,87 @@
+/* Name: Illia Karban, Mariia Vanaga, Maryna Sobol */ 
+/* Student ID: C00315274, C00313153, C00312784 */ 
+/* Date: February 2026 */ 
+/* Screen name: Main Dashboard Styling*/ 
+/* Purpose: Stylesheet for main dashboard and menu layout of the hotel system */ 
+
+/* Universal selector to apply styles globally across elements */
+* {
+  box-sizing: border-box; 
+  font-family: Inter, system-ui, sans-serif; /* Sets default font for the page */
+}
+
+/* Styling for the body of the page */
+body {
+  margin: 0;  /* Removes default margin around the page */
+  display: flex;  /* Uses flexbox for layout */
+  background: #faf7f2;  
+  min-height: 100vh;  /* Ensures the page takes at least the full viewport height */
+  color: white; 
+  font-weight: 700;  
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 260px;  
+  padding: 30px;  
+  background: rgba(255, 250, 240, 0.85); 
+  border-right: 1px solid rgba(120, 96, 64, 0.18);  /* Subtle border on the right side */
+  display: flex;  /* Uses flexbox layout for sidebar items */
+  flex-direction: column;  /* Stacks items vertically */
+}
+
+/* Sidebar heading styling */
+.sidebar h2 {
+  margin-bottom: 30px;  /* Adds space below the heading */
+  font-weight: 700;  /* Makes the heading bold */
+}
+
+/* Styles for the links in the sidebar */
+.sidebar nav a {
+  display: block;  /* Makes each link a block element */
+  padding: 12px 0;  
+  color: #8b8377; 
+  text-decoration: none;  /* Removes underline from links */
+}
+
+/* Hover effect for links in the sidebar */
+.sidebar nav a:hover {
+  color: red; 
+}
+
+/* Main content area styling */
+.content {
+  flex: 1; /* Makes the content area take up the remaining space in the flex container */
+  padding: 40px;
+  background: url('index.png') center / cover no-repeat fixed; /*background image*/
+}
+
+h1 {margin-top: 8px; }
+h2 {color: black;}
+
+.menu-options {
+  margin-top: 40px;
+}
+
+/* Menu option button styling */
+.menu-options a {
+  display: block;  /* Makes the link a block element */
+  background: #d62a2a;  
+  color: white;  
+  padding: 14px 20px;  
+  text-decoration: none;  
+  margin-top: 13px;  
+  text-align: center;  
+  border-radius: 8px;  
+  transition: transform 0.3s ease;  /* Adds transition for smooth effect */
+  box-shadow: 2px 2px;  /* Subtle shadow */
+  font-weight: 650;   
+  letter-spacing: 1px; 
+}
+
+/* Hover effect for the menu options buttons */
+.menu-options a:hover {
+  background: #b00000;  
+  transform: translateY(-5px);  /* Button lifts slightly on hover */
+  box-shadow: 3px 3px 3px rgb(199, 45, 68);
+}
